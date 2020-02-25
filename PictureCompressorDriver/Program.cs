@@ -9,15 +9,13 @@ namespace PictureCompressorDriver
 {
     class Program
     {
-        private const int COMPRESSION_QUALITY = 25;
+        private const int COMPRESSION_QUALITY = 50;
 
         static void Main(string[] args)
         {
             const string INPUT_PATH = @"C:\Users\fpmor\OneDrive\travel\2020-02 New Mexico\photos";
             //const string @"C:\Users\fpmor\OneDrive\travel\2019-11 Canada trip";
             Console.WriteLine("Start");
-
-
 
             // C:\Users\fpmor\OneDrive\2019 Driveway Pictures
 
