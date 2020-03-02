@@ -7,3 +7,5 @@ private const int COMPRESSION_QUALITY = 50;
 const string INPUT_PATH = @"C:\Users\fpmor\OneDrive\travel\2020-02 New Mexico\photos";
 ```
 Then recompile and run.
+
+Your output will be located in a subfolder named `compressed-50` (based on above values).
