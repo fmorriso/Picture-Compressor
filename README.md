@@ -10,6 +10,6 @@ Then recompile and run.
 
 Your output will be located in a subfolder named 
 ```
-C:\Users\fpmor\OneDrive\travel\2020-02 New Mexico\photos\compressed-50
+C:\Users\fpmor\OneDrive\travel\2020-02 New Mexico\photos\compressed-50\
 ``` 
 (based on above values).
