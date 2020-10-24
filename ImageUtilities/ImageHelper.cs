@@ -10,7 +10,7 @@ namespace ImageUtilities
     public static class ImageHelper
     {
         /// <summary>
-        /// Compresses a JPG image to the specified quality level and save it.
+        /// Compresses a JPG image to the specified quality level and saves it.
         /// </summary>
         /// <param name="InputFile"></param>
         /// <param name="OutputFile"></param>
@@ -34,7 +34,7 @@ namespace ImageUtilities
             }
 
             Console.WriteLine($"Compressing {InputFile}");
-            Image returnValue = Image.FromFile(InputFile, true);
+            Image img = Image.FromFile(InputFile, true);
 
             //
             // Encoder parameter for image quality
@@ -44,11 +44,11 @@ namespace ImageUtilities
             var encoderParams = new EncoderParameters(1);
             encoderParams.Param[0] = qualityParam;
 
-            returnValue.Save(OutputFile, jpegCodec, encoderParams);
+            img.Save(OutputFile, jpegCodec, encoderParams);
             jpegCodec = null;
             encoderParams = null;
             qualityParam = null;
-            return returnValue;
+            return img;
         }
 
         /// <summary> 

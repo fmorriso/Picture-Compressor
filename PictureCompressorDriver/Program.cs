@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PictureCompressorDriver
 {
@@ -13,7 +10,12 @@ namespace PictureCompressorDriver
 
         static void Main(string[] args)
         {
-            const string INPUT_PATH = @"C:\Users\fpmor\OneDrive\travel\2020-02 New Mexico\photos";
+            const string INPUT_PATH = @"C:\Users\fpmor\OneDrive\Elaine Morrison\Silver Chest\";
+            // @"C:\Users\fpmor\OneDrive\Pictures\slides-to-digital\Mikes Wedding";
+            // @"S:\slides-to-digital\2020-06-Test-Adjusted";
+            // @"C:\Users\fpmor\OneDrive\Pictures\slides-to-digital\2020-06-Test-Adjusted";
+            // "C:\projects\CompMath\unit02b\animation";
+            // "C:\Users\fpmor\OneDrive\travel\2020-02 New Mexico\photos";
             //const string @"C:\Users\fpmor\OneDrive\travel\2019-11 Canada trip";
             Console.WriteLine("Start");
 
@@ -31,7 +33,7 @@ namespace PictureCompressorDriver
             {
                 var di = new DirectoryInfo(INPUT_PATH);
                 var pics = di.GetFiles("*.jpg");
-                
+
                 foreach (System.Drawing.Image file in di.GetFiles("*.jpg")
                                          .Select(f => new { f, outputFilename = Path.Combine(OUTPUT_PATH, f.Name) })
                                          .Where(@t => !File.Exists(@t.outputFilename))
