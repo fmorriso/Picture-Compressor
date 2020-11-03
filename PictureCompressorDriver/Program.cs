@@ -6,11 +6,12 @@ namespace PictureCompressorDriver
 {
     class Program
     {
-        private const int COMPRESSION_QUALITY = 50;
+        private const int COMPRESSION_QUALITY = 90;
 
         static void Main(string[] args)
         {
-            const string INPUT_PATH = @"C:\Users\fpmor\OneDrive\Elaine Morrison\Silver Chest\";
+            const string INPUT_PATH = @"S:\Photos - Misc\Fred spine procedure";
+            // @"C:\Users\fpmor\OneDrive\Elaine Morrison\Silver Chest\";
             // @"C:\Users\fpmor\OneDrive\Pictures\slides-to-digital\Mikes Wedding";
             // @"S:\slides-to-digital\2020-06-Test-Adjusted";
             // @"C:\Users\fpmor\OneDrive\Pictures\slides-to-digital\2020-06-Test-Adjusted";
