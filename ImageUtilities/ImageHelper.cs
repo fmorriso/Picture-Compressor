@@ -12,8 +12,8 @@ namespace ImageUtilities
         /// <summary>
         /// Compresses a JPG image to the specified quality level and saves it.
         /// </summary>
-        /// <param name="InputFile"></param>
-        /// <param name="OutputFile"></param>
+        /// <param name="InputFile">path to the input file</param>
+        /// <param name="OutputFile">path to the output file</param>
         /// <param name="CompressionQuality">between 1 and 100</param>
         /// <returns>The compressed image</returns>
         public static Image SaveCompressedJpegImage(string InputFile, string OutputFile, int CompressionQuality)

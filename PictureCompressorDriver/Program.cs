@@ -6,21 +6,13 @@ namespace PictureCompressorDriver
 {
     class Program
     {
-        private const int COMPRESSION_QUALITY = 90;
+        private const int COMPRESSION_QUALITY = 1;
 
         static void Main(string[] args)
         {
-            const string INPUT_PATH = @"S:\Photos - Misc\Fred spine procedure";
-            // @"C:\Users\fpmor\OneDrive\Elaine Morrison\Silver Chest\";
-            // @"C:\Users\fpmor\OneDrive\Pictures\slides-to-digital\Mikes Wedding";
-            // @"S:\slides-to-digital\2020-06-Test-Adjusted";
-            // @"C:\Users\fpmor\OneDrive\Pictures\slides-to-digital\2020-06-Test-Adjusted";
-            // "C:\projects\CompMath\unit02b\animation";
-            // "C:\Users\fpmor\OneDrive\travel\2020-02 New Mexico\photos";
-            //const string @"C:\Users\fpmor\OneDrive\travel\2019-11 Canada trip";
+            const string INPUT_PATH = @"C:\Users\fpmor\OneDrive\Pictures\Cats\ButAdGetCat";
+           
             Console.WriteLine("Start");
-
-            // C:\Users\fpmor\OneDrive\2019 Driveway Pictures
 
             string OUTPUT_PATH = Path.Combine(INPUT_PATH, $"compressed-{COMPRESSION_QUALITY.ToString()}");
             Console.WriteLine(OUTPUT_PATH);
